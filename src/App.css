@@ -15,6 +15,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 }
 .left-comtainer {
   background-image: linear-gradient(#3938380e, #141415),
@@ -170,6 +171,7 @@
 .display-flex{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .img-graph{
   border-radius: 10px;
@@ -219,6 +221,60 @@ margin: 10px;
 }
 .mb-minus{
   margin-bottom: -10px;
+}
+
+@media screen and (max-width: 768px) {
+  .right-comtainer {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgba(26, 25, 25, 0.237);
+    background-image: linear-gradient(
+      180deg,
+      #030303d9 1.27%,
+      rgba(13, 14, 13, 0.855) 14.45%,
+      rgba(21, 21, 21, 0.837) 43.36%,
+      rgba(18, 18, 18, 0.841) 99.84%,
+      rgba(18, 18, 18, 0.823) 99.85%
+    ),
+    url("./images/main\ image\ background.jpg");
+
+  background-size: cover;
+  margin-top: -25px;
+  padding-bottom: 20px;
+  padding: 20px;
+  }
+
+  .img-graph{
+    border-radius: 10px;
+    height: 250px;
+    width: 350px;
+    margin-top: 40px;
+  }
+
+  .width-320{
+    width: 100%;
+  }
+
+  .left-comtainer {
+    background-image: linear-gradient(#3938380e, #141415),
+      url("./images/main\ image\ background.jpg");
+  
+    background-size: cover;
+    position: relative;
+    height: 560px;
+    width: 400px;
+    border-radius: 20px;
+  }
+  .img-mainimage {
+    display: inline-block;
+    width: 80%;
+    height: 82%;
+    padding: 0;
+    margin-left: 100px;
+    margin-top: -70px;
+  }
+
 }
 
 @media (prefers-reduced-motion: no-preference) {
